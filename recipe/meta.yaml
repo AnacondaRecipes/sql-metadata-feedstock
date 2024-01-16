@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sql_metadata-{{ version }}.tar.gz
-  sha256: 69f9ef71ac69759ae339f0aab6a8a718cf548100d08b742d24bb1800b7a2ea20
+  url: https://github.com/macbre/sql-metadata/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 7577a26fb095a4ee71090d254ee83c1e6be46174739efccbc8ccdd3f7559045b
 
 build:
   skip: true  # [py<38]
