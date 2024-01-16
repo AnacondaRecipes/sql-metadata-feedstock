@@ -10,17 +10,17 @@ source:
   sha256: 2242603497bbcdb6e565c883df7b48eb85e19439acab54026a0e2b1cae6b5fe6
 
 build:
-  noarch: python
+  skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
 requirements:
   host:
+    - python
     - pip
     - poetry-core >=1.0.0
-    - python >=3.6,<4.0
   run:
-    - python >=3.6,<4.0
+    - python
     - sqlparse >=0.4.1,<0.5.0
 
 test:
