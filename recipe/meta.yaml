@@ -34,8 +34,15 @@ test:
 about:
   home: https://github.com/macbre/sql-metadata
   summary: Uses tokenized query returned by python-sqlparse and generates query metadata
+  description: |
+    Uses tokenized query returned by python-sqlparse and generates query metadata.
+    Extracts column names and tables used by the query. Automatically conduct column alias resolution, 
+    sub queries aliases resolution as well as tables aliases resolving.
   license: MIT
+  license_family: MIT
   license_file: LICENSE
+  doc_url: https://github.com/macbre/sql-metadata/blob/master/README.md
+  dev_url: https://github.com/macbre/sql-metadata
 
 extra:
   recipe-maintainers:
