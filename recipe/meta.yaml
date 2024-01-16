@@ -26,10 +26,14 @@ requirements:
 test:
   imports:
     - sql_metadata
+  source_files:
+    - test
   commands:
     - pip check
+    - pytest -v test
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/macbre/sql-metadata
